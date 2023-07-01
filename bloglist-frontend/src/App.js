@@ -28,10 +28,15 @@ const App = () => {
       {user && (
         <div>
           <h2>blogs</h2>
-          <p>
+          <div className="loggedUser">
             {user.name} logged in
-            <button onClick={() => dispatch(logoutWithMsg())}>logout</button>
-          </p>
+            <button
+              className="logoutBtn"
+              onClick={() => dispatch(logoutWithMsg())}
+            >
+              logout
+            </button>
+          </div>
           <Togglable buttonLabel="new blog" ref={blogFormRef}>
             <BlogForm user={user} referenceFunc={blogFormRef} />
           </Togglable>

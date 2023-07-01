@@ -17,3 +17,139 @@
   padding: 10px;
   margin-bottom: 10px;
 }
+.loginPage {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.loginHeader {
+  text-align: center;
+  color: #333333;
+}
+
+.Username {
+  display: block;
+  margin-bottom: 5px;
+  color: #555555;
+}
+.Password {
+  display: block;
+  margin-bottom: 5px;
+  color: #555555;
+}
+#login-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 95%;
+  padding: 10px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+input[type='user'] {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+form {
+  margin-top: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+.removeBtn {
+  display: block;
+  max-width: 100px;
+  padding: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.toggleBtn {
+  display: block;
+  max-width: 100px;
+  padding: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 2%;
+  top: 5px;
+}
+
+.listBtn {
+  max-width: 100px;
+  padding: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  left: 5px;
+  bottom: 3px;
+}
+
+.logoutBtn {
+  max-width: 100px;
+  padding: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  left: 5px;
+}
+.createBtn {
+  max-width: 100px;
+  padding: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+#like-button {
+  max-width: 100px;
+  padding: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  left: 5px;
+}
+button:hover {
+  background-color: #555555;
+}
+#login-button:hover {
+  background-color: #555555;
+}
+#like-button:hover {
+  background-color: #555555;
+}

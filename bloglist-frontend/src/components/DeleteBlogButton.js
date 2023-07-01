@@ -9,7 +9,9 @@ const DeleteBlogButton = ({ deleteMethod, blog, user }) => {
   }
   return (
     <div>
-      <button onClick={() => deleteMethod(blog.id, blog)}>remove</button>
+      <button className="removeBtn" onClick={() => deleteMethod(blog.id, blog)}>
+        remove
+      </button>
     </div>
   )
 }

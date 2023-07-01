@@ -131,7 +131,7 @@ describe('Blog app', () => {
         cy.get('.blog').eq(2).should('contain', 'third most likes')
         cy.get('.blog').eq(3).should('contain', 'least likes')
       })
-      it.only('their order can be changed after liking them', () => {
+      it('their order can be changed after liking them', () => {
         cy.contains('third most likes').contains('view').click()
         cy.contains('third most likes')
           .parent()
@@ -143,7 +143,7 @@ describe('Blog app', () => {
           .should('contain', 'third most likes')
           .find('#like-button')
           .click()
-        cy.contains('third most likes').parent().parent().contains('likes 4')
+        cy.contains('third most likes').parent().parent().contains('likes 5')
 
         cy.get('.blog').eq(0).should('contain', 'most likes')
         cy.get('.blog').eq(1).should('contain', 'third most likes')

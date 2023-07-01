@@ -23,10 +23,11 @@ const BlogForm = ({ user, referenceFunc }) => {
   return (
     <div>
       <h2>create new</h2>
-      <form onSubmit={addBlog}>
+      <form className="blogForm" onSubmit={addBlog}>
         <div>
           title:
           <input
+            type="user"
             value={title}
             onChange={({ target }) => setTitle(target.value)}
             id="title-input"
@@ -35,6 +36,7 @@ const BlogForm = ({ user, referenceFunc }) => {
         <div>
           author:
           <input
+            type="user"
             value={author}
             onChange={({ target }) => setAuthor(target.value)}
             id="author-input"
@@ -43,12 +45,13 @@ const BlogForm = ({ user, referenceFunc }) => {
         <div>
           url:
           <input
+            type="user"
             value={url}
             onChange={({ target }) => setUrl(target.value)}
             id="url-input"
           />
         </div>
-        <button id="create-button" type="submit">
+        <button className='createBtn' id="create-button" type="submit">
           create
         </button>
       </form>

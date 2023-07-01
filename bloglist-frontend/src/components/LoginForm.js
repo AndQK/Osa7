@@ -11,10 +11,10 @@ const LoginForm = () => {
     dispatch(tryLogin(username, password))
   }
   return (
-    <div>
-      <h2>log in to application</h2>
+    <div className="loginPage">
+      <h2 className="loginHeader">log in to application</h2>
       <form onSubmit={handleLogin}>
-        <div>
+        <div className="Username">
           username
           <input
             id="username"
@@ -24,7 +24,7 @@ const LoginForm = () => {
             onChange={({ target }) => setUsername(target.value)}
           />
         </div>
-        <div>
+        <div className="Password">
           password
           <input
             id="password"
